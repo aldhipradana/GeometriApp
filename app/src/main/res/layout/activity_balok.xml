@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersegiActivity">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Balok"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:fontFamily="cursive"
+            android:textFontWeight="900"
+            android:textColor="@color/colorCustom1"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtLayoutTinggiBalok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Tinggi Balok (cm)"
+            app:hintTextColor="#333"
+            app:boxStrokeColor="#333"
+            android:textColorHint="#333"
+            app:boxBackgroundColor="#333"
+            android:outlineSpotShadowColor="#333"
+            android:layout_marginBottom="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtTinggiBalok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="#333"
+                app:boxStrokeColor="#333"
+                android:textColorHint="#333"
+                android:textColor="#333"
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtLayoutPanjangBalok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Panjang Balok (cm)"
+            app:hintTextColor="#333"
+            app:boxStrokeColor="#333"
+            android:textColorHint="#333"
+            app:boxBackgroundColor="#333"
+            android:outlineSpotShadowColor="#333"
+            android:layout_marginBottom="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPanjangBalok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="#333"
+                app:boxStrokeColor="#333"
+                android:textColorHint="#333"
+                android:textColor="#333"
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtLayoutLebarBalok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Lebar Balok (cm)"
+            app:hintTextColor="#333"
+            app:boxStrokeColor="#333"
+            android:textColorHint="#333"
+            app:boxBackgroundColor="#333"
+            android:outlineSpotShadowColor="#333"
+            android:layout_marginBottom="20dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtLebarBalok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextColor="#333"
+                app:boxStrokeColor="#333"
+                android:textColorHint="#333"
+                android:textColor="#333"
+                android:inputType="number"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="Hasil Perhitungan"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:fontFamily="cursive"
+            android:textFontWeight="900"
+            android:textColor="@color/colorCustom1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:layout_marginBottom="50dp"
+                android:text="Luas Alas: "
+                android:textSize="25dp"
+                android:textAlignment="textStart"
+                android:fontFamily="cursive"
+                android:textFontWeight="900"
+                android:textColor="#333"/>
+            <TextView
+                android:id="@+id/hasilLABalok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:layout_marginBottom="50dp"
+                android:text="0 cm"
+                android:textSize="25dp"
+                android:textAlignment="textStart"
+                android:fontFamily="cursive"
+                android:textFontWeight="900"
+                android:textColor="#333"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:layout_marginBottom="50dp"
+                android:text="Volume: "
+                android:textSize="25dp"
+                android:textAlignment="textStart"
+                android:fontFamily="cursive"
+                android:textFontWeight="900"
+                android:textColor="#333"/>
+            <TextView
+                android:id="@+id/hasilVolumeBalok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:layout_marginBottom="50dp"
+                android:text="0 cm"
+                android:textSize="25dp"
+                android:textAlignment="textStart"
+                android:fontFamily="cursive"
+                android:textFontWeight="900"
+                android:textColor="#333"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:weightSum="100">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"/>
+        <Button
+            android:id="@+id/btnHitungBalok"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Hitung!"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:background="@drawable/button_bacground"
+            style="@style/TextAppearance.AppCompat.Button"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
